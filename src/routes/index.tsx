@@ -30,8 +30,8 @@ import { useEffect, useState, type ComponentType } from "react";
 
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/image.png.asset.json";
-import clientOne from "@/assets/image-2.png.asset.json";
-import clientTwo from "@/assets/image-3.png.asset.json";
+import clientOne from "@/assets/client-review-one.png.asset.json";
+import clientTwo from "@/assets/client-review-two.png.asset.json";
 import palm from "@/assets/image-4.png.asset.json";
 import kailash from "@/assets/image-5.png.asset.json";
 import numerology from "@/assets/image-6.png.asset.json";
