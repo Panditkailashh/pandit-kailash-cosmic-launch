@@ -33,6 +33,8 @@ import logo from "@/assets/image.png.asset.json";
 import reviewFaceOne from "@/assets/review-face-one.png.asset.json";
 import reviewFaceTwo from "@/assets/review-face-two.png.asset.json";
 import reviewFaceThree from "@/assets/review-face-three.png.asset.json";
+import reviewFaceFour from "@/assets/review-face-four.png.asset.json";
+import reviewFaceFive from "@/assets/review-face-five.png.asset.json";
 import palm from "@/assets/image-4.png.asset.json";
 import kailash from "@/assets/image-5.png.asset.json";
 import numerology from "@/assets/image-6.png.asset.json";
@@ -323,6 +325,7 @@ function PanditKailash() {
           <div className="reviews-grid">
             {[
               [reviewFaceOne.url, "Verified Client"], [reviewFaceTwo.url, "London Client"], [reviewFaceThree.url, "Manchester Client"],
+              [reviewFaceFour.url, "Birmingham Client"], [reviewFaceFive.url, "UK Client"],
             ].map(([image, label], index) => <Reveal key={label} className="review-card"><div className="review-top"><img src={image} alt={`${label} review avatar`} loading="lazy" /><div><h3>{label}</h3><span>{index === 0 ? "Verified review" : "Client review"}</span></div></div><div className="stars-row" aria-label="Five stars">{Array.from({ length: 5 }).map((_, i) => <Star key={i} fill="currentColor" />)}</div><blockquote>“Add client review here…”</blockquote></Reveal>)}
           </div>
         </section>
