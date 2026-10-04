@@ -321,7 +321,7 @@ function PanditKailash() {
           <Reveal><SectionHeading eyebrow="Client feedback" title="What Our Clients Say" copy="Review text can be added here when supplied by clients." /></Reveal>
           <div className="reviews-grid">
             {[
-              [clientOne.url, "Verified Client"], [clientTwo.url, "London Client"], [palm.url, "Manchester Client"], [numerology.url, "Birmingham Client"], [zodiac.url, "UK Client"],
+              [clientOne.url, "Verified Client"], [clientTwo.url, "London Client"], [clientOne.url, "Manchester Client"], [clientTwo.url, "Birmingham Client"], [clientOne.url, "UK Client"],
             ].map(([image, label], index) => <Reveal key={label} className="review-card"><div className="review-top"><img src={image} alt={`${label} review avatar`} loading="lazy" /><div><h3>{label}</h3><span>{index === 0 ? "Verified review" : "Client review"}</span></div></div><div className="stars-row" aria-label="Five stars">{Array.from({ length: 5 }).map((_, i) => <Star key={i} fill="currentColor" />)}</div><blockquote>“Add client review here…”</blockquote></Reveal>)}
           </div>
         </section>
