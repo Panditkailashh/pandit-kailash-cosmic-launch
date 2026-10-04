@@ -30,8 +30,9 @@ import { useEffect, useState, type ComponentType } from "react";
 
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/image.png.asset.json";
-import clientOne from "@/assets/client-review-one.png.asset.json";
-import clientTwo from "@/assets/client-review-two.png.asset.json";
+import reviewFaceOne from "@/assets/review-face-one.png.asset.json";
+import reviewFaceTwo from "@/assets/review-face-two.png.asset.json";
+import reviewFaceThree from "@/assets/review-face-three.png.asset.json";
 import palm from "@/assets/image-4.png.asset.json";
 import kailash from "@/assets/image-5.png.asset.json";
 import numerology from "@/assets/image-6.png.asset.json";
@@ -321,7 +322,7 @@ function PanditKailash() {
           <Reveal><SectionHeading eyebrow="Client feedback" title="What Our Clients Say" copy="Review text can be added here when supplied by clients." /></Reveal>
           <div className="reviews-grid">
             {[
-              [clientOne.url, "Verified Client"], [clientTwo.url, "London Client"], [clientOne.url, "Manchester Client"], [clientTwo.url, "Birmingham Client"], [clientOne.url, "UK Client"],
+              [reviewFaceOne.url, "Verified Client"], [reviewFaceTwo.url, "London Client"], [reviewFaceThree.url, "Manchester Client"],
             ].map(([image, label], index) => <Reveal key={label} className="review-card"><div className="review-top"><img src={image} alt={`${label} review avatar`} loading="lazy" /><div><h3>{label}</h3><span>{index === 0 ? "Verified review" : "Client review"}</span></div></div><div className="stars-row" aria-label="Five stars">{Array.from({ length: 5 }).map((_, i) => <Star key={i} fill="currentColor" />)}</div><blockquote>“Add client review here…”</blockquote></Reveal>)}
           </div>
         </section>
