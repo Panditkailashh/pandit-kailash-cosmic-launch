@@ -158,8 +158,8 @@ function Reveal({ children, className = "" }: { children: React.ReactNode; class
   return (
     <motion.div
       className={className}
-      initial={reduce ? undefined : { opacity: 0, y: 24 }}
-      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
+      initial={reduce ? false : { opacity: 0, y: 24 }}
+      whileInView={reduce ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
@@ -331,7 +331,7 @@ function PanditKailash() {
           <div className="gallery-grid">
             {[
               [kailash.url, "Pandit Kailash spiritual guidance"], [palm.url, "Palm reading symbolism"], [zodiac.url, "Astrology zodiac wheel"], [numerology.url, "Numerology sacred geometry"], [generalImage, "Astrological birth chart"],
-            ].map(([image, alt], index) => <button key={image} type="button" className={`gallery-item gallery-${index + 1}`} onClick={() => setLightbox(image)} aria-label={`Open ${alt}`}><img src={image} alt={alt} loading="lazy" /><span><ExternalLink /></span></button>)}
+            ].map(([image, alt], index) => <button key={image} type="button" className={`gallery-item gallery-${index + 1}`} onClick={() => image && setLightbox(image)} aria-label={`Open ${alt}`}><img src={image} alt={alt} loading="lazy" /><span><ExternalLink /></span></button>)}
           </div>
         </section>
 
