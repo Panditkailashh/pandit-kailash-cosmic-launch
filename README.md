@@ -11,6 +11,7 @@ Do not ask me whether I want to continue.
 Do not stop after creating a design plan.
 I want you to actually create and modify the project files and build the working frontend.
 Implement:
+
 - Premium 3D cosmic astrology design
 - PanditKailash branding
 - Astrology & Vedic Astrology Readings as the main hero message
@@ -38,12 +39,13 @@ Implement:
 - Gold / midnight-blue / black visual theme
 - SEO and accessibility
 - Fast performance
-IMPORTANT:
-Use the supplied images and attachments already available in the project. Do not replace the five supplied review faces with random people.
-Use the supplied business and service information exactly as provided.
-Do not invent qualifications, certifications, awards, years of experience, fake testimonials, customer statistics, guarantees, or physical addresses.
-The website must be a COMPLETE WORKING FRONTEND, not a prototype or plan.
-After implementation:
+  IMPORTANT:
+  Use the supplied images and attachments already available in the project. Do not replace the five supplied review faces with random people.
+  Use the supplied business and service information exactly as provided.
+  Do not invent qualifications, certifications, awards, years of experience, fake testimonials, customer statistics, guarantees, or physical addresses.
+  The website must be a COMPLETE WORKING FRONTEND, not a prototype or plan.
+  After implementation:
+
 1. Run the project/build.
 2. Check for TypeScript errors.
 3. Check for broken imports.
@@ -54,7 +56,7 @@ After implementation:
 8. Check responsive mobile layout.
 9. Fix any errors you find.
 10. Only after completing the implementation, tell me what was built.
-START IMPLEMENTING THE WEBSITE NOW.
+    START IMPLEMENTING THE WEBSITE NOW.
 
 This project was built with [Lovable](https://lovable.dev).
 
